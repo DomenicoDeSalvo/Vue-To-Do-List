@@ -20,7 +20,7 @@
                 <div class="new_task">
                     <input
                     @keyup.enter="addTask" 
-                    v-model="inputValue" 
+                    v-model.trim="inputValue" 
                     class="bar" type="text" placeholder="Nuova task"
                     >
                     <button

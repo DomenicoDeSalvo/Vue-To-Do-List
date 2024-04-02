@@ -31,12 +31,16 @@ createApp({
         },
 
         addTask(){
-            this.tasks.push(
-                {
-                    text: this.inputValue,
-                    done: false
-                }
-            )
+            if(this.inputValue !==''){
+
+                this.tasks.push(
+                    {
+                        text: this.inputValue,
+                        done: false
+                    }
+                )
+            }
+            this.inputValue =''
         }
     }
 
