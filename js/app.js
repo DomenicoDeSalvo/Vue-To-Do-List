@@ -4,6 +4,7 @@ const {createApp} = Vue;
 createApp({
     data() {
         return{
+            done: false,
             // Array contente le task
             tasks:[
                 {
@@ -19,14 +20,24 @@ createApp({
                     done: true
                 }
             ],
+            //Nuova Task
+            inputValue:''
         }
     },
 
     methods:{
         deleteTask(i){
             this.tasks.splice(i,1)
-        }
+        },
 
+        addTask(){
+            this.tasks.push(
+                {
+                    text: this.inputValue,
+                    done: false
+                }
+            )
+        }
     }
 
 }).mount('#app')

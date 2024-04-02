@@ -28,13 +28,17 @@ main section{
 
 /* NEW TASK BAR */
 .new_task{
-    text-align: center;
+    align-items: flex-start;
     margin: 24px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
 }
 
-.new_task input{
+.bar{
     width: 80%;
-    height: 24px;
+    height: 26px;
     border-radius: 4px;
     border: none;
     padding: 0 6px;
@@ -43,6 +47,13 @@ main section{
 
 .new_task input:focus-visible{
     outline: none;
+}
+
+.submit{
+    border: none;
+    border-radius: 4px;
+    line-height: 24px;
+    padding: 0 12px;
 }
 
 /* TASKS */

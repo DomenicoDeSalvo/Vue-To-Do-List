@@ -18,7 +18,17 @@
             <section class="container">
                 <!-- NEW TASK BAR -->
                 <div class="new_task">
-                    <input type="text" placeholder="Nuova task">
+                    <input
+                    @keyup.enter="addTask" 
+                    v-model="inputValue" 
+                    class="bar" type="text" placeholder="Nuova task"
+                    >
+                    <button
+                    @click="addTask" 
+                    class="submit"
+                    >
+                        Aggiungi
+                    </button>
                 </div>
                 <!-- TASKS -->
                 <div class="card">
