@@ -4,7 +4,7 @@ const {createApp} = Vue;
 createApp({
     data() {
         return{
-            done: false,
+            // Array contente le task
             tasks:[
                 {
                     text: 'Fare gli esercizi',
