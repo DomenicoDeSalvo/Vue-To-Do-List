@@ -35,6 +35,10 @@ main section{
     padding: 24px;
 }
 
+.done{
+    text-decoration: line-through;
+}
+
 .list li{
     line-height: 24px;
     cursor: pointer;

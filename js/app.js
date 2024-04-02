@@ -4,6 +4,7 @@ const {createApp} = Vue;
 createApp({
     data() {
         return{
+            done: false,
             tasks:[
                 {
                     text: 'Fare gli esercizi',
@@ -15,10 +16,15 @@ createApp({
                 },
                 {
                     text: 'Lavare la macchina',
-                    done: false
+                    done: true
                 }
             ],
         }
+    },
+
+    methods:{
+
+
     }
 
 }).mount('#app')
