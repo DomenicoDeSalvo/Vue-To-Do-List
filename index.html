@@ -18,7 +18,18 @@
             <section class="container">
                 <div class="card">
                     <ul class="list">
-                        <li v-for="task in tasks" :class="task.done === true ? 'done' : ''">{{task.text}}</li>
+                        <li 
+                        v-for="(task, i) in tasks"
+                        >
+                            <span
+                            :class="task.done === true ? 'done' : ''"
+                            >
+                            {{task.text}}
+                            </span>
+                            <span
+                            @click="deleteTask(i)"
+                            >X</span>
+                        </li>
                     </ul>
                 </div>
             </section>
