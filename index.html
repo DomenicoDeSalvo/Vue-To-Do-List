@@ -37,6 +37,7 @@
                         v-for="(task, i) in tasks"
                         >
                             <span
+                            @click="clicked(task)"
                             :class="task.done === true ? 'done' : ''"
                             >
                             {{task.text}}

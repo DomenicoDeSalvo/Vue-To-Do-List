@@ -41,6 +41,10 @@ createApp({
                 )
             }
             this.inputValue =''
+        },
+
+        clicked(task){
+            task.done = !task.done;
         }
     }
 
